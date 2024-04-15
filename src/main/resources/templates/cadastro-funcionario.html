@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Funcionario</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de Funcionario</h1>
+      <form action="#" th:action="@{/save}" th:object="${curso}" method="post">
+        <div class="form-group">
+          <label for="login">Email:</label><br />
+          <input
+            type="text"
+            id="login"
+            class="texto"
+            th:field="*{login}"
+          /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha:</label><br />
+          <input type="password" id="senha" th:field="*{senha}" /><br />
+        </div>
+        <div class="form-group">
+          <label for="nomeCompleto">Nome Completo:</label><br />
+          <input
+            type="text"
+            id="nomeCompleto"
+            th:field="*{nomeCompleto}"
+          /><br />
+        </div>
+        <div class="form-group">
+          <label for="nomeSocial">Nome Social:</label><br />
+          <input type="text" id="nomeSocial" th:field="*{nomeSocial}" /><br />
+        </div>
+        <div class="form-group">
+          <label for="cargo">Cargo:</label><br />
+          <input type="text" id="cargo" th:field="*{cargo}" /><br />
+        </div>
+        <div class="form-group">
+          <label for="">Nivel Acesso:</label><br />
+          <input
+            type="text"
+            id="enumNivelAcesso"
+            th:field="*{enumNivelAcesso}"
+          />
+        </div>
+
+        <br />
+        <button type="submit">Cadastrar</button>
+      </form>
+	  <br/>
+	  <a href="/" class="btn">Voltar a pagina inicial</a>
+    </div>
+  </body>
+</html>
