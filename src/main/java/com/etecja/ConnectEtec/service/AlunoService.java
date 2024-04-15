@@ -1,14 +1,14 @@
-package com.etecja.tccfeatures.service;
+package com.etecja.ConnectEtec.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.etecja.tccfeatures.entities.Aluno;
-import com.etecja.tccfeatures.entities.Funcionario;
-import com.etecja.tccfeatures.repositories.AlunoRepository;
-import com.etecja.tccfeatures.repositories.FuncionarioRepository;
+import com.etecja.ConnectEtec.entities.Aluno;
+import com.etecja.ConnectEtec.entities.Funcionario;
+import com.etecja.ConnectEtec.repositories.AlunoRepository;
+import com.etecja.ConnectEtec.repositories.FuncionarioRepository;
 
 @Service
 public class AlunoService {

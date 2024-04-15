@@ -1,4 +1,4 @@
-package com.etecja.tccfeatures;
+package com.etecja.ConnectEtec;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.etecja.tccfeatures.resources;
+package com.etecja.ConnectEtec.resources;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.etecja.tccfeatures.entities.Aluno;
-import com.etecja.tccfeatures.entities.Funcionario;
-import com.etecja.tccfeatures.service.AlunoService;
-import com.etecja.tccfeatures.service.FuncionarioService;
+import com.etecja.ConnectEtec.entities.Aluno;
+import com.etecja.ConnectEtec.entities.Funcionario;
+import com.etecja.ConnectEtec.service.AlunoService;
+import com.etecja.ConnectEtec.service.FuncionarioService;
 
 
 @Controller

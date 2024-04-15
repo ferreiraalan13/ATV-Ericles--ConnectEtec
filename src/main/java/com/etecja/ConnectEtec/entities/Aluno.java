@@ -1,4 +1,4 @@
-package com.etecja.tccfeatures.entities;
+package com.etecja.ConnectEtec.entities;
 
 import java.io.Serializable;
 import java.util.Date;

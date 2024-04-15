@@ -1,4 +1,4 @@
-package com.etecja.tccfeatures;
+package com.etecja.ConnectEtec;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
