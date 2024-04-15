@@ -24,7 +24,7 @@ public class Funcionario implements Serializable {
 	private String nomeCompleto;
 	private String nomeSocial;
 	private String cargo;
-	private String EnumNivelAcesso;
+	private String nivelAcesso;
 	
 
 	public Integer getId() {
@@ -94,11 +94,11 @@ public class Funcionario implements Serializable {
 		this.cargo = cargo;
 	}
 
-	public String getEnumNivelAcesso() {
-		return EnumNivelAcesso;
+	public String getNivelAcesso() {
+		return nivelAcesso;
 	}
 
-	public void setEnumNivelAcesso(String enumNivelAcesso) {
-		EnumNivelAcesso = enumNivelAcesso;
+	public void setNivelAcesso(String nivelAcesso) {
+		this.nivelAcesso = nivelAcesso;
 	}
 }

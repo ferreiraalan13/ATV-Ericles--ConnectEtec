@@ -39,15 +39,18 @@
           <label for="cargo">Cargo:</label><br />
           <input type="text" id="cargo" th:field="*{cargo}" /><br />
         </div>
-        <div class="form-group">
-          <label for="">Nivel Acesso:</label><br />
-          <input
-            type="text"
-            id="enumNivelAcesso"
-            th:field="*{enumNivelAcesso}"
-          />
-        </div>
-
+		
+		<div class="form-group">
+		          <label for="NivelAcesso">Nível de Acesso:</label>
+		          <div class="custom-select">
+		            <select name="NivelAcesso" id="NivelAcesso" th:field="*{NivelAcesso}" >
+		              <option value="BAIXO">Baixo</option>
+		              <option value="MEDIO">Medio</option>
+		              <option value="ALTO">Alto</option>
+		            </select>
+		          </div>
+		        </div>
+		
         <br />
         <button type="submit">Cadastrar</button>
       </form>
