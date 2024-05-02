@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Funcionarios</title>
+</head>
+<body>
+    <h1>Lista de Funcionarios</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>login</th>
+                <th>nomeCompleto</th>
+                <th>nomeSocial</th>
+                <th>cargo</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="Funcionario : ${funcionarios}">
+                <td th:text="${Funcionario.id}"></td>
+                <td th:text="${Funcionario.login}"></td>
+                <td th:text="${Funcionario.nomeCompleto}"></td>
+                <td th:text="${Funcionario.nomeSocial}"></td>
+                <td th:text="${Funcionario.cargo}"></td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

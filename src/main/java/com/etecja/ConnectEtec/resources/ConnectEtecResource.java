@@ -56,5 +56,19 @@ public class ConnectEtecResource {
 		alunoService.save(aluno);
 		return "redirect:/cursos";
 	}
-
+	
+	@GetMapping("/alunos")
+	public String findAllAlunos(Model model) {
+	    List<Aluno> alunos = alunoService.findAll();
+	    model.addAttribute("alunos", alunos);
+	    return "listaAlunos";
+	}
+	
+	@GetMapping("/funcionarios")
+	public String findAllFuncionarios(Model model) {
+	    List<Funcionario> funcionarios = cursoService.findAll();
+	    model.addAttribute("funcionarios", funcionarios);
+	    return "listaFuncionarios";
+	}
+	
 }
